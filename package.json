@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@slack/web-api": "^7.1.0",
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2"
+  }
+}
