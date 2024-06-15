@@ -12,12 +12,12 @@ app.post('/notify', async (req, res) => {
 
   try {
     await axios.post('https://slack.com/api/chat.postMessage', {
-      channel: 'channel_id',  
+      channel: process.env.channel_id,  
       text: `Task "${taskName}" is marked as done.`
     }, {
       headers: {
         'Content-Type': 'application/json',
-        'Authorization': `bearer_token`  
+        'Authorization': process.env.bearer_token  
       }
     });
 
